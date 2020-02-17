@@ -13,11 +13,13 @@ import CV from './components/cv';
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 
-export default function App() {
+class App extends React.Component {
+  
+  render(){
   return (
     <Router>
       <div>
-        <ul>
+        <ul className={this.props.name}>
           <li>
             <Link to="/">HOME</Link>
           </li>
@@ -35,9 +37,8 @@ export default function App() {
           </li>
         </ul>
 
-        <hr />
 
-        
+      
         <Switch>
           <Route exact path="/">
             <Home />
@@ -58,4 +59,40 @@ export default function App() {
       </div>
     </Router>
   );
+}
+}
+
+
+export default class Dropdown extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isToggleOn: false
+    };
+    this.handleClick = this.handleClick.bind(this);
+
+  }
+  handleClick() {
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));
+  }
+  
+  render () {
+    return (
+      <div className='dropdown'>
+        <div className="container" onClick={this.handleClick}>
+          <div className="bars">
+            <div className={this.state.isToggleOn? "change bar1": "bar1"}></div>
+            <div className={this.state.isToggleOn? "change bar2": "bar2"}></div>
+            <div className={this.state.isToggleOn? "change bar3": "bar3"}></div>
+          </div>
+          <div className="menu">MENU</div>
+        </div>
+        {this.state.isToggleOn? <App name="show app"/>: <App name="app"/>}
+
+        
+      </div>
+  )
+}
 }
