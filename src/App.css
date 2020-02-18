@@ -1,11 +1,13 @@
 
 .container {
     display: flex;
+    background-color: yellow;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif ;
   }
 .bars {
     display: inline-block;
@@ -34,12 +36,66 @@
 
   .app {
     display: none;
-    position: absolute;
-    background-color: #f1f1f1;
+    background-color:blueviolet;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 100vh;
+    list-style-type: none;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
   } 
   .show.app {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
   } 
+.menu {
+    font-size: 30px;
+    /* font-weight: bold; */
+}
+.app li a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px; 
+    /* position: relative; */
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%; 
+}
+.app li a:hover, .app li a:active {
+    letter-spacing: 5px;
+    text-decoration: line-through;
+}
+
+/* .app li a:after,
+.app li a:before {
+  backface-visibility: hidden;
+  border: 1px solid black;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.app li a:hover:after,
+.app li a:hover:before {
+  backface-visibility: hidden;
+  border-color: black;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.app li a:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+} */

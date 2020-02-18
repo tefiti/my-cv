@@ -1,0 +1,15 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('./mitchell-luo-hRT2x6UVsAY-unsplash.jpg'); */
+    /* background-size: cover; */
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: coral;
+}
+.quotation {
+    align-self: flex-end;
+}

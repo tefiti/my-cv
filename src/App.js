@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 
+
 import Home from './components/home';
 import About from './components/about';
 import CV from './components/cv';
