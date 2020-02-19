@@ -3,43 +3,26 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 
+import Dropdown from './components/dropdown/dropdown';
+import Nav from './components/nav/nav';
+import Home from './components/home/home';
+import About from './components/about/about';
+import CV from './components/cv/cv';
+import Projects from "./components/projects/projects";
+import Contact from "./components/contacts/contact";
 
-import Home from './components/home';
-import About from './components/about';
-import CV from './components/cv';
-import Projects from "./components/projects";
-import Contact from "./components/contact";
-
-class App extends React.Component {
-  
+export default class App extends React.Component {
   render(){
-  return (
-    <Router>
-      <div>
-        <ul className={this.props.name}>
-          <li>
-            <Link to="/">HOME</Link>
-          </li>
-          <li>
-            <Link to="/about">ABOUT ME</Link>
-          </li>
-          <li>
-            <Link to="/cv">CV</Link>
-          </li>
-          <li>
-            <Link to="/projects">PROJECTS</Link>
-          </li>
-          <li>
-            <Link to="/contact">CONTACT</Link>
-          </li>
-        </ul>
-
-
-      
+    return (
+      <Router>
+        <Dropdown />
+        <Nav />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -57,43 +40,9 @@ class App extends React.Component {
             <Contact />
           </Route>
         </Switch>
-      </div>
-    </Router>
-  );
-}
-}
-
-
-export default class Dropdown extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isToggleOn: false
-    };
-    this.handleClick = this.handleClick.bind(this);
-
+      </Router>
+    );
   }
-  handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
-    }));
-  }
-  
-  render () {
-    return (
-      <div className='dropdown'>
-        <div className="container" onClick={this.handleClick}>
-          <div className="bars">
-            <div className={this.state.isToggleOn? "change bar1": "bar1"}></div>
-            <div className={this.state.isToggleOn? "change bar2": "bar2"}></div>
-            <div className={this.state.isToggleOn? "change bar3": "bar3"}></div>
-          </div>
-          <div className="menu">MENU</div>
-        </div>
-        {this.state.isToggleOn? <App name="show app"/>: <App name="app"/>}
+}
 
-        
-      </div>
-  )
-}
-}
+
