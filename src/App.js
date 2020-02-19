@@ -5,9 +5,9 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import Dropdown from './components/dropdown/dropdown';
 import Nav from './components/nav/nav';
@@ -21,8 +21,13 @@ export default class App extends React.Component {
   render(){
     return (
       <Router>
+      <Container fluid>
+      <Row>
         <Dropdown />
+        <Col md={3}>
         <Nav />
+        </Col>
+        <Col md={9}>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -40,6 +45,9 @@ export default class App extends React.Component {
             <Contact />
           </Route>
         </Switch>
+        </Col>
+        </Row>
+        </Container>
       </Router>
     );
   }
