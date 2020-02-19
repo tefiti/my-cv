@@ -22,7 +22,7 @@ export default class App extends React.Component {
     return (
       <Router>
       <Container fluid>
-      <Row>
+      <Row noGutters>
         <Dropdown />
         <Col md={3}>
         <Nav />

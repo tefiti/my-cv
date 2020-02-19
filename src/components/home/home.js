@@ -9,7 +9,7 @@ function Home() {
     return (
       <div className="home">
         <div className="myName">
-          <h1>Oana Fuia</h1>
+          <h1>Hi, I'm <span className="yellow">Oana</span></h1>
           <h3>Front-end Web Developer</h3>
         </div>
         <div className="quotation">

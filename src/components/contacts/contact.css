@@ -1,0 +1,12 @@
+html, #root, .contact {
+    background-color:rgba(197,193,192);
+    height: 100%;
+}
+a {
+    color: black;
+    text-decoration: underline #f7ce3e;
+}
+ a:hover {
+     color: #c5c1c0;
+     text-decoration: line-through #f7ce3e;
+ }
