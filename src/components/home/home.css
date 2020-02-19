@@ -1,14 +1,17 @@
 .home {
     /* width: 100vw; */
     height: 100%;
-    /* background-image: url('./mitchell-luo-hRT2x6UVsAY-unsplash.jpg'); */
-    /* background-size: cover; */
+    /* background-image: url(../images/joe-woods-4Zaq5xY5M_c-unsplash.jpg); */
+    background-color: rgba(197,193,192);
+    background-size: cover;
     position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: coral;
+}
+.yellow {
+    color: #f7ce3e;
 }
 .quotation {
     align-self: flex-end;
