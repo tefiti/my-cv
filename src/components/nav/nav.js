@@ -1,10 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './nav.css';
+import ProfilePicture from './WhatsApp Image 2020-02-11 at 17.15.51.jpeg';
 
 export default class Nav extends React.Component {
     render() {
     return(
-    <ul>
+        <nav className="nav">
+        <img className="profilePicture" src={ProfilePicture} alt="woman portrain"></img>
+        <h2 className="myName">Oana Fuia</h2>
+    <ul className="show app">
         <li>
             <Link to="/">HOME</Link>
         </li>
@@ -21,6 +26,7 @@ export default class Nav extends React.Component {
             <Link to="/contact">CONTACT</Link>
         </li>
     </ul>
+    </nav>
     )
 }
 }
