@@ -1,17 +1,16 @@
 .home {
-    /* width: 100vw; */
     height: 100%;
-    /* background-image: url(../images/joe-woods-4Zaq5xY5M_c-unsplash.jpg); */
-    background-color: rgba(197,193,192);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
     background-size: cover;
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
-.yellow {
-    color: #f7ce3e;
+.myNameTitle {
+    background-color: #f7ce3e;
+}
+.myTitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #0a1612;
 }
 .quotation {
     align-self: flex-end;
