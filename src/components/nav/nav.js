@@ -36,10 +36,11 @@ const useStyles = makeStyles(theme => ({
         marginLeft: drawerWidth,
       },
       [theme.breakpoints.down('xs')]:{
-        height:`calc(100% - ${AppBar.height}px)`
+        // height:`calc(100% - ${AppBar.height}px)`
+        paddingTop: 60,
       },
         flexGrow: 1,
-        padding: theme.spacing(3)
+        // padding: theme.spacing(5)
     },
     
   }));
