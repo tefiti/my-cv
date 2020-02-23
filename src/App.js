@@ -1,33 +1,26 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import './App.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 
-import Dropdown from './components/dropdown/dropdown';
-import Nav from './components/nav/nav';
-import Home from './components/home/home';
-import About from './components/about/about';
-import CV from './components/cv/cv';
+import Grid from "@material-ui/core/Grid";
+import ResponsiveDrawer from "./components/nav/nav";
+import Home from "./components/home/home";
+import About from "./components/about/about";
+import CV from "./components/cv/cv";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contacts/contact";
-
+import Drawer from '@material-ui/core/Drawer';
 export default class App extends React.Component {
-  render(){
+  // state = {
+  //   open: true
+  // }
+  render() {
     return (
       <Router>
-      <Container fluid>
-      <Row noGutters>
-        <Dropdown />
-        <Col md={3}>
-        <Nav />
-        </Col>
-        <Col md={9}>
+       
+            <ResponsiveDrawer>
+        
+    
         <Switch>
           <Route exact path="/">
             <Home />
@@ -45,12 +38,11 @@ export default class App extends React.Component {
             <Contact />
           </Route>
         </Switch>
-        </Col>
-        </Row>
-        </Container>
+      
+    
+        </ResponsiveDrawer>
+    
       </Router>
     );
   }
 }
-
-

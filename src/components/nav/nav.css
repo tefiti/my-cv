@@ -8,25 +8,26 @@ html, body, #root, .container-fluid, .row {
 .container .row .col {
     padding: 0;
 }
+
+
 .nav {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #1A2930;
-} 
-.nav .profilePicture {
-    max-width: 150px;
-    height: auto;
-    border-radius: 8%;
-    margin-top: 20px;
-    margin-left: 40px;
     
+    background-color: #1A2930;
+    color:white;
+    min-width: 250px;
+    position: fixed;
+    z-index: 2;
+} 
+.myName{
+    text-align: center;
 }
-.nav .myName {
-    color: white;
-    padding-left: 40px;
-}
+
+
+
+    
+
+
 .app {
     display: flex;
     flex-direction: column;
@@ -43,4 +44,8 @@ html, body, #root, .container-fluid, .row {
 .app li a:hover, .app li a:active {
     letter-spacing: 5px;
     text-decoration: line-through;
+}
+main {
+    /* position: relative; */
+    /* margin-left: 250px; */
 }
