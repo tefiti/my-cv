@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './cv.css';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 const CV = () => {
     return (
-      <div className="cv">
+      <Fragment className="cv">
       <Paper className="paper" elevation={3}>
         <h2>Skills</h2>
         <p><Skills/></p>
@@ -22,7 +22,7 @@ const CV = () => {
         <h2>Foreign Languages</h2>
         <p><Languages/></p>
         </Paper>
-      </div>
+      </Fragment>
     );
 }
 

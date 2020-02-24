@@ -1,17 +1,28 @@
 .home {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
+    background: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
     background-size: cover;
+    
+    
 }
+
 .myNameTitle {
-    background-color: #f7ce3e;
+    letter-spacing: 5px;
+    color: white;
+    
 }
 .myTitle {
     text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #0a1612;
+    text-align: center;
+
 }
-.quotation {
-    align-self: flex-end;
+#root .home .quotation {
+    text-align: end;
+    color: white;
+    
+}
+
+.quotation q {
+    font-style: italic;
 }

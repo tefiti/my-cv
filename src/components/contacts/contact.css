@@ -2,6 +2,28 @@ html, #root, .contact {
     background-color:rgba(197,193,192);
     height: 100%;
 }
+@media only screen and (max-width: 600px){
+    .card {
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+    @media only screen and (min-width: 601px) {
+    .card {  
+           margin: 20px;
+           padding: 20px; 
+        }
+    }
+    @media only screen and (min-width:1280px) {
+    .card {
+        margin: 50px;
+        padding:50px;
+        }
+    }
+.media {
+    height: 500px;
+    width: auto;
+}
 a {
     color: black;
     text-decoration: underline #f7ce3e;
