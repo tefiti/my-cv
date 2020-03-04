@@ -1,25 +1,30 @@
 .home {
     height: 100%;
-    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
+    /* box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
     background: url(../images/markus-spiske-8OyKWQgBsKQ-unsplash.jpg);
-    background-size: cover;
-    
+    background-size: cover; */
+    background-image: linear-gradient(170deg, white 60%, #FFDBE3 60%);
     
 }
 
-.myNameTitle {
-    letter-spacing: 5px;
-    color: white;
+.myNameHome {
+    color:#FF3566;
     
 }
 .myTitle {
+    color: #000000;
+}
+.myTitle, .myNameHome {
+    letter-spacing: 5px;
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Spartan', sans-serif;
 
 }
 #root .home .quotation {
     text-align: end;
-    color: white;
+    color: #000000;
+    font-family: 'Satisfy', cursive;
     
 }
 

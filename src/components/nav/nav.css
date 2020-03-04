@@ -13,7 +13,7 @@ html, body, #root, .container-fluid, .row {
 .nav {
     height: 100%;
     
-    background-color: #1A2930;
+    background-color: #000000;
     color:white;
     min-width: 250px;
     position: fixed;
@@ -43,5 +43,6 @@ html, body, #root, .container-fluid, .row {
 }
 .app li a:hover, .app li a:active {
     letter-spacing: 5px;
-    text-decoration: line-through;
+    text-decoration: underline;
+    color: #FFDBE3;
 }

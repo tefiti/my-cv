@@ -1,5 +1,5 @@
 html, #root, .contact {
-    background-color:rgba(197,193,192);
+    background-color: #FFDBE3;
     height: 100%;
 }
 @media only screen and (max-width: 600px){
@@ -26,9 +26,9 @@ html, #root, .contact {
 }
 a {
     color: black;
-    text-decoration: underline #f7ce3e;
+    text-decoration: underline #FF3566;
 }
  a:hover {
      color: #c5c1c0;
-     text-decoration: line-through #f7ce3e;
+     text-decoration: underline #FF3566;
  }

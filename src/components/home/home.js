@@ -14,7 +14,7 @@ function Home() {
       style={{ minHeight: "100vh" }}
     >
       <Grid item xs={8} className="myNameTitle">
-        <h1 className="myTitle">Hi,I'm Oana</h1>
+        <h1 className="myNameHome">Hi,I'm Oana</h1>
         <h2 className="myTitle">Welcome to my cv</h2>
       </Grid>
       <Grid item xs={9} className="quotation">
