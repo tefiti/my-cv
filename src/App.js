@@ -7,7 +7,7 @@ import ResponsiveDrawer from "./components/nav/nav";
 import Home from "./components/home/home";
 import About from "./components/about/about";
 import CV from "./components/cv/cv";
-import Projects from "./components/projects/projects";
+import  Projects from "./components/projects/projects";
 import Contact from "./components/contacts/contact";
 import Drawer from '@material-ui/core/Drawer';
 export default class App extends React.Component {

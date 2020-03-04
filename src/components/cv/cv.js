@@ -5,7 +5,7 @@ import Paper from '@material-ui/core/Paper';
 
 const CV = () => {
     return (
-      <Fragment className="cv">
+      <Fragment>
       <Paper className="paper" elevation={3}>
         <h2>Skills</h2>
         <p><Skills/></p>

@@ -1,12 +1,17 @@
 import React from 'react';
+import Professional from './professional';
+import Personal from './personal';
 
 function Projects() {
     return (
       <div className="projects">
-        <h2>Professional</h2>
-        <h2>Personal</h2>
+        <Professional/>
+        <Personal/>
       </div>
     );
 }
 
 export default Projects;
+
+
+

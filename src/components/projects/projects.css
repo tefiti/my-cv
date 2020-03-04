@@ -1,0 +1,15 @@
+.containerProjects {
+  padding: 20px;
+}
+.titleProjects {
+  text-align: center;
+  background-color: #f7ce3e;
+}
+.cardProject {
+  height: 340px;
+}
+.cardImage {
+  height: 200px;
+  width: auto;
+  background-size: cover;
+}
