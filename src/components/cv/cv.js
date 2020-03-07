@@ -52,7 +52,7 @@ class Skills extends React.Component {
 class Professional extends React.Component {
   render() {
     return (
-      <div>
+      <div className="cv">
       <Grid container spacing={3}>
       <Grid item xs={12} md={6}>
         <h4>Informal School of It - Front-end Web Developer</h4>

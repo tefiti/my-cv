@@ -108,7 +108,7 @@ function ResponsiveDrawer(props) {
       <CssBaseline />
       <Hidden smUp>
         <AppBar position="fixed">
-          <Toolbar>
+          <Toolbar className={"toolbarCustomStyle"}>
             <IconButton
               color="inherit"
               aria-label="open drawer"

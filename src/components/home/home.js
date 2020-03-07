@@ -8,10 +8,10 @@ function Home() {
   return (
     <Grid
       container
-      className="home current"
+      className="home"
       alignItems="center"
       justify="center"
-      style={{ minHeight: "100vh" }}
+      // style={{ minHeight: "100vh" }}
     >
       <Grid item xs={8} className="myNameTitle">
       <Typist>

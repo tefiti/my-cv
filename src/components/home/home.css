@@ -1,11 +1,10 @@
 .home {
-  height: 100%;
   background-image: linear-gradient(170deg, white 60%, #FFDBE3 60%);
+  min-height: calc(100vh - 3rem);
 }
 
 .myNameHome {
   color: #EE1873;
-  /* color: #ff3566; */
 }
 .myTitle {
   color: #000000;
@@ -19,7 +18,6 @@
 }
 #root .home .quote {
   text-align: end;
-  /* color: #000000; */
 }
 
 .quoteCOntent {

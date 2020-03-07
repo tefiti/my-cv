@@ -9,7 +9,9 @@ body,
 .container .row .col {
   padding: 0;
 }
-
+.toolbarCustomStyle {
+  background-color: black;
+}
 .nav {
   height: 100vh;
   font-family: "Spartan", sans-serif;
@@ -66,12 +68,12 @@ body,
 }
 .appPages li a:hover {
   letter-spacing: 0.3rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #ffdbe3;
 }
 .appPages .current {
     letter-spacing: 0.3rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #ffdbe3;
     font-weight: bold;
   }
