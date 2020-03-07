@@ -63,7 +63,7 @@ const Personal = () => {
         </Grid>
             {personalProjects.map((element, index) => (
         <Grid item xs={12} md={6} lg={4}>
-              <Card className="cardProject" key={index}>
+              <Card className="cardProject"  key={index}>
                 <CardMedia className="cardImage"
                   image = {element.image}
                   alt="Card image"/>

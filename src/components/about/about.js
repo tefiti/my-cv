@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Slide from '@material-ui/core/Slide';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import myPicture from '../images/michael-dam-mEZ3PoFGs_k-unsplash.jpg';
 import './about.css';
 
@@ -17,10 +18,10 @@ function About() {
           </p>
           <p>Now I am determined to become an excellent web developer, even though I sometimes feel overwhelmed of the distance I 
           have to cross to get there.</p>
-          <p>So...why do I love programming? Here are three reasons:</p>
-          <p>it challenges me every day with my own limits;</p>
-          <p>it allows me to be as creative as a child;</p>
-          <p>I can make things that are useful to other people.</p>
+          <p>So...why do I like programming? Here are three reasons:</p>
+          <p><FavoriteIcon className={"heartStyle"}/> it challenges me every day with my own limits;</p>
+          <p><FavoriteIcon className={"heartStyle"}/> it allows me to be as creative as a child;</p>
+          <p><FavoriteIcon className={"heartStyle"}/> I can make things that are useful to other people.</p>
         </div>
         </Slide>
         </Grid>

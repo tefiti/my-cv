@@ -3,24 +3,25 @@ import './cv.css';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
+
 const CV = () => {
     return (
       <Fragment>
       <Paper className="paper" elevation={3}>
         <h2>Skills</h2>
-        <p><Skills/></p>
+        <div><Skills/></div>
         <hr></hr>
         <h2>Professional Trainings</h2>
-        <p><Professional/></p>
+        <div><Professional/></div>
         <hr></hr>
         <h2>Work History</h2>
-        <p><Work/></p>
+        <div><Work/></div>
         <hr></hr>
         <h2>Education</h2>
-        <p><Education/></p>
+        <div><Education/></div>
         <hr></hr>
         <h2>Foreign Languages</h2>
-        <p><Languages/></p>
+        <div><Languages/></div>
         </Paper>
       </Fragment>
     );
@@ -59,7 +60,7 @@ class Professional extends React.Component {
         <ul>
           <li>HTTP: fundamentals about the protocol: methods, headers, error codes</li>
           <li>HTML5 and CSS3: how to build a User Interface</li>
-          <li>avaScript: how to use variables, functions, objects, scope, DOM manipulation, AJAX, fetch API, Promises</li>
+          <li>JavaScript: how to use variables, functions, objects, scope, DOM manipulation, AJAX, fetch API, Promises</li>
           <li>ES6: scoping, let and const, arrow functions, classes, getters/setters and static class methods, template string, array methods (forEach, map, find, some, every, reduce etc), enhanced object literals, destructuring</li>
           <li>OOP: basics about classes, objects and inheritance in JS</li>
           <li>REACT: props and state, functional based components, class based components, react router</li>

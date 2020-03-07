@@ -8,7 +8,7 @@ function Home() {
   return (
     <Grid
       container
-      className="home"
+      className="home current"
       alignItems="center"
       justify="center"
       style={{ minHeight: "100vh" }}
@@ -22,8 +22,8 @@ function Home() {
  
 </Typist>
       </Grid>
-      <Grid item xs={9} className="quotation">
-        <q>
+      <Grid item xs={9} className="quote">
+        <q className="quoteCOntent">
           Allow passion to become your purpose, and it will one day become your
           profession.
         </q>

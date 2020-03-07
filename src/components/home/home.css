@@ -1,10 +1,11 @@
 .home {
   height: 100%;
-  background-image: linear-gradient(170deg, white 60%, #ffdbe3 60%);
+  background-image: linear-gradient(170deg, white 60%, #FFDBE3 60%);
 }
 
 .myNameHome {
-  color: #ff3566;
+  color: #EE1873;
+  /* color: #ff3566; */
 }
 .myTitle {
   color: #000000;
@@ -16,12 +17,12 @@
   text-align: center;
   font-family: "Spartan", sans-serif;
 }
-#root .home .quotation {
+#root .home .quote {
   text-align: end;
-  color: #000000;
-  font-family: "Satisfy", cursive;
+  /* color: #000000; */
 }
 
-.quotation q {
-  font-style: italic;
+.quoteCOntent {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
 }

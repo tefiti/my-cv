@@ -1,48 +1,77 @@
-
-
-
-html, body, #root, .container-fluid, .row {
-    height: 100vh;
+html,
+body,
+#root,
+.container-fluid,
+.row {
+  height: 100vh;
 }
 
 .container .row .col {
-    padding: 0;
+  padding: 0;
 }
-
 
 .nav {
-    height: 100%;
-    font-family: 'Spartan', sans-serif;
-    background-color: #000000;
-    color:white;
-    min-width: 250px;
-    position: fixed;
-    z-index: 2;
-} 
-.myName{
-    text-align: center;
+  height: 100vh;
+  font-family: "Spartan", sans-serif;
+  background-color: #000000;
+  color: white;
+  min-width: 250px;
+  position: fixed;
+  z-index: 2;
+}
+.myData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myName {
+  padding-top: 1.5rem;
+  text-align: center;
 }
 
-
-
+.socialIcons {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.iconCustomStyle {
+    color: white;
+}
+.iconCustomStyle:hover {
+    color: #ffdbe3 !important;
     
-
-
-.app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 250px;
-  } 
- 
-
-.app li a {
-    color:white;
-    text-decoration: none;
-    letter-spacing: 0;
 }
-.app li a:hover, .app li a:active {
-    letter-spacing: 5px;
+
+.appPages {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 961px) {
+  .appPages {
+    min-height: 30rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .appPages {
+    min-height: 15rem;
+  }
+}
+
+.appPages li a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.appPages li a:hover {
+  letter-spacing: 0.3rem;
+  text-decoration: underline;
+  color: #ffdbe3;
+}
+.appPages .current {
+    letter-spacing: 0.3rem;
     text-decoration: underline;
-    color: #FFDBE3;
-}
+    color: #ffdbe3;
+    font-weight: bold;
+  }
