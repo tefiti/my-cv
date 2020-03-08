@@ -7,7 +7,11 @@ export default function Footer() {
   
     return (
      
-        <div className="footer"> <CopyrightIcon/> 2020 Oana Fuia</div>
+        <footer className="footer">
+            <div className="footerStyle">
+         <CopyrightIcon/> 2020 Oana Fuia
+         </div>
+         </footer>
     
     );
   }

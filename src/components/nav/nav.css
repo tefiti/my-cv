@@ -10,12 +10,12 @@ body,
   padding: 0;
 }
 .toolbarCustomStyle {
-  background-color: black;
+  background-color: #3A4664;
 }
 .nav {
   height: 100vh;
   font-family: "Spartan", sans-serif;
-  background-color: #000000;
+  background-color: #3A4664;
   color: white;
   min-width: 250px;
   position: fixed;
