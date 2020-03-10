@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Slide from '@material-ui/core/Slide';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import myPicture from '../images/michael-dam-mEZ3PoFGs_k-unsplash.jpg';
+import myPicture from '../images/WhatsApp Image 2020-03-10 at 14.42.11.jpeg';
 import './about.css';
 
 function About() {

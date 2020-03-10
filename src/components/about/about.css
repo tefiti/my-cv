@@ -1,5 +1,5 @@
 .about {
-    background-image: linear-gradient(180deg, white 60%, #FFDBE3 40%);
+    background-image: linear-gradient(180deg, white 70%, #FFDBE3 20%);
     min-height: calc(100vh - 3rem);
 }
 
@@ -27,6 +27,7 @@
 .myPhotoStyle {
     width: 70%;
     height: auto;
+    image-orientation: portrait;
 
 }
 .heartStyle {
